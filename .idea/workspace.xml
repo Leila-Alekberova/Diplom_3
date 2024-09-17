@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a058b5d-3bdf-4853-9962-6b4e8675d5a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/main_page_locator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/order_list_locator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locators/profile_page_locator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/order_list_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/profile_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/recover_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_order_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_recover.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/order_list_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order_list_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

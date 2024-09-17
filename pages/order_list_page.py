@@ -65,8 +65,3 @@ class OrderListPage(BasePage):
         return result
 
 
-    # Получение списка номеров заказов
-    def get_order_numbers(self):
-        by, value = OrderListLocator.NUMBER_ORDER_IN_POPUP
-        order_numbers = self.driver.find_elements(by, value)
-        return [order.text for order in order_numbers]
