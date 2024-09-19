@@ -20,5 +20,6 @@ class MainPageLocators:
     ORDER_TO = (By.XPATH, '//div[contains (@class, "constructor-element_pos_bottom")]') # Место, куда перетаскивается ингредиент для заказа
     ELEMENT_COVER = (By.XPATH, "//*[contains(@class, 'Modal_modal__loading')]"
                                "/following::div[@class='Modal_modal_overlay__x2ZCr']") # Перекрывающий элемент
+    NUMBER_NEW_ORDER = (By.CLASS_NAME, "Modal_modal__title_shadow__3ikwq") #Номер нового заказа
 
 

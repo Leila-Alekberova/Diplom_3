@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a058b5d-3bdf-4853-9962-6b4e8675d5a7" name="Changes" comment="">
+    <list default="true" id="8a058b5d-3bdf-4853-9962-6b4e8675d5a7" name="Changes" comment="develop">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/main_page_locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/main_page_locator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/order_list_locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/order_list_locator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/profile_page_locator.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/profile_page_locator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/order_list_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order_list_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recover_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recover_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_order_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_order_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_recover.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_recover.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +73,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop3&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alekberovalf/Desktop/Diplom/diplom_2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests in test_recover.py">
-    <configuration name="Python tests for test_profile.TestProfile.test_go_order_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_order_list.py">
+    <configuration name="Python tests for test_order_list.TestOrderList.test_order_detailes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +89,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_profile.TestProfile.test_go_order_list&quot;" />
+      <option name="_new_target" value="&quot;test_order_list.TestOrderList.test_order_detailes&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -93,6 +108,36 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_recover.TestRecoverPassword.test_enter_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_recover.TestRecoverPassword.test_enter_email&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_recover.TestRecoverPassword.test_enter_email_and_click_button" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_recover.TestRecoverPassword.test_enter_email_and_click_button&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_order_list.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -108,43 +153,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_profile.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_profile.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_recover.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_recover.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_recover.py" />
-        <item itemvalue="Python tests.Python tests for test_profile.TestProfile.test_logout" />
-        <item itemvalue="Python tests.Python tests for test_profile.TestProfile.test_go_order_list" />
-        <item itemvalue="Python tests.Python tests in test_profile.py" />
         <item itemvalue="Python tests.Python tests in test_order_list.py" />
+        <item itemvalue="Python tests.Python tests for test_profile.TestProfile.test_logout" />
+        <item itemvalue="Python tests.Python tests for test_order_list.TestOrderList.test_order_detailes" />
+        <item itemvalue="Python tests.Python tests for test_recover.TestRecoverPassword.test_enter_email_and_click_button" />
+        <item itemvalue="Python tests.Python tests for test_recover.TestRecoverPassword.test_enter_email" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +179,19 @@
       <option name="presentableId" value="Default" />
       <updated>1725562029312</updated>
     </task>
+    <task id="LOCAL-00001" summary="develop">
+      <option name="closed" value="true" />
+      <created>1726589173294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726589173294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop" />
   </component>
 </project>

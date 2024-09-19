@@ -1,5 +1,3 @@
-from locators.main_page_locator import MainPageLocators
-from locators.profile_page_locator import ProfilePageLocator
 from pages.base_page import BasePage
 from locators.order_list_locator import OrderListLocator
 
@@ -29,6 +27,10 @@ class OrderListPage(BasePage):
     def wait_clickable_exit_button(self):
         self.wait_clickable_element(OrderListLocator.BUTTON_EXIT)
 
+    @allure.step("Ожидание, когда кнопка закрытия заказа станет кликабельной")
+    def find_exit_button(self):
+        self.find_element(OrderListLocator.BUTTON_EXIT)
+
     @allure.step("Нажатие кнопки закрытия заказа")
     def click_exit_button(self):
         self.click_element(OrderListLocator.BUTTON_EXIT)
@@ -54,8 +56,12 @@ class OrderListPage(BasePage):
     @allure.step("Получение номера заказа в поп-апе")
     def get_number_order_in_popup(self):
         self.wait_until_element_invisibility(OrderListLocator.DEFAULT_NUMBER_ORDER_IN_POPUP)
-        res = self.find_element_text(OrderListLocator.NUMBER_ORDER_IN_POPUP)
-        return res
+        result = self.find_element_text(OrderListLocator.NUMBER_ORDER_IN_POPUP)
+        return result
+
+    @allure.step("Ожидание отображения номера закзаа в поп-апе")
+    def wait_visibility_number_order(self):
+        self.wait_visibility_element(OrderListLocator.NUMBER_ORDER_IN_POPUP)
 
     @allure.step("Получение списка заказов 'В работе'")
     def get_order_list_in_work(self):
@@ -64,4 +70,30 @@ class OrderListPage(BasePage):
         result = self.find_element(OrderListLocator.NUMBER_ORDERS_IN_WORK).text
         return result
 
+    @allure.step("Открываем страницу заказов")
+    def click_order_list(self):
+        self.click_element(OrderListLocator.BUTTON_ORDER_LIST)
 
+    @allure.step("Ожидание отображения заголовка 'Лента заказов'")
+    def wait_visibility_title(self):
+        result = self.wait_visibility_element(OrderListLocator.TITLE_ORDER_LIST)
+        return result
+
+    @allure.step("Ожидание отображения заголовка 'Состав'")
+    def wait_visibility_popup(self):
+        result = self.wait_visibility_element(OrderListLocator.POPUP_ORDER_DETAILS)
+        return result
+
+    @allure.step("Нахождение заголовка 'Состав'")
+    def find_title_popup(self):
+        result = self.find_element(OrderListLocator.POPUP_ORDER_DETAILS)
+        return result
+
+    @allure.step("Нахождение заголовка 'Состав'")
+    def find__popup(self):
+        result = self.find_element(OrderListLocator.POPUP_ORDER_DETAILS)
+        return result
+
+    @allure.step("Открытие главной страницы")
+    def open_main_page(self):
+        self.open_page(Urls.MAIN_URL)

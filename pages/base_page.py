@@ -49,6 +49,10 @@ class BasePage:
     def wait_visibility_elements(self, locator):
         WebDriverWait(self.driver, 10).until(EC.presence_of_all_elements_located(locator))
 
+    # wait_visibility_element и wait_visibility_elements два разных метода,
+    # Метод wait_visibility_element ожидает, пока один конкретный элемент станет видимым.
+    # Метод wait_visibility_elements ожидает, пока все элементы из указанного списка станут видимыми
+
     # Ожидание, когда элемент станет кликабельным
     def wait_clickable_element(self, locator):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(locator))

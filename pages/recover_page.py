@@ -1,6 +1,6 @@
-from locators.profile_page_locator import ProfilePageLocator
 from locators.profile_page_locator import RecoverPageLocator
 from pages.base_page import BasePage
+from data import Urls
 import allure
 
 class RecoverPage(BasePage):
@@ -28,5 +28,12 @@ class RecoverPage(BasePage):
     def active_input_pass(self):
         return self.find_element_with_wait(RecoverPageLocator.INPUT_ANIMATED)
 
+    @allure.step("Переход на страницу авторизации пользователя")
+    def open_login_page(self):
+        self.open_page(Urls.GET_LOGIN)
+
+    @allure.step("Ожидание отображения кнопки 'Сохранить'")
+    def wait_visibility_button_save(self):
+        self.wait_visibility_element(RecoverPageLocator.BUTTON_SAVE_PASS)
 
 

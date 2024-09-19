@@ -11,7 +11,6 @@ class OrderListLocator:
     ORDER_LIST_USER = (By.XPATH, '//div[@class="OrderHistory_textBox__3lgbs mb-6"]//p[@class="text '
                                 'text_type_digits-default"]')  # Список заказов пользователя
     NUMBER_ORDER = (By.XPATH, '//p[text()="{}"]')  # номер заказа из Ленты заказов
-    NUMBER_NEW_ORDER = (By.CLASS_NAME, "Modal_modal__title_shadow__3ikwq")
     NUMBER_ORDER_FROM_LOCATOR = By.XPATH, '//p[text()="{}"]' # Поиск номера заказа по локатору
     ALL_ORDERS = (By.XPATH, "//div[contains(@class, 'OrderHistory_textBox__3lgbs')]/p[contains(@class, "
                                        "'text_type_digits-default')]")
@@ -19,4 +18,5 @@ class OrderListLocator:
     NUMBER_ORDERS_IN_WORK = (By.XPATH, '//*[contains(@class,"orderListReady")]//li[contains(@class,"digits-default")]') # Номер заказа 'В работе'
     DEFAULT_NUMBER_ORDER_IN_POPUP = (By.XPATH, '//h2[text()="9999"]') # Дефолтный номер заказа в поп-апе
     TEXT_ORDER_IN_WORK = (By.XPATH, '//li[text()="Все текущие заказы готовы!"]') # В блоке 'В работе' все заказы готовы
+    BUTTON_ORDER_LIST = (By.XPATH, '//p[text()="Лента Заказов"]/parent::a')  # кнопка "Лента заказов" в хэдере страницы
 

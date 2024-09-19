@@ -21,6 +21,10 @@ class ProfilePageLocator:
     LINK_ORDER_HISTORY = (By.XPATH, '//a[text()="История заказов"]') #История заказов в профиле пользователя
     NUMBER_NEW_ORDER = (By.CLASS_NAME, "Modal_modal__title_shadow__3ikwq")
     NUMBER_FIRST_ORDER = (By.XPATH, '(//*[contains(@class,"textBox")]//p[contains(@class,"digits-default")])[last()]') # Номер первого с конца заказа в истории заказов пользователя
+    BUTTON_PROFILE = (By.XPATH, '//p[text()="Личный Кабинет"]')  # кнопка "Личный Кабинет" в хэдере страницы
+    BUTTON_ORDER_LIST = (By.XPATH, '//p[text()="Лента Заказов"]/parent::a')  # кнопка "Лента заказов" в хэдере страницы
+    ORDER_LIST_USER = (By.XPATH, '//div[@class="OrderHistory_textBox__3lgbs mb-6"]//p[@class="text '
+                                 'text_type_digits-default"]')  # Список заказов пользователя
 
 class LoginPageLocator:
     FIELD_EMAIL = (By.XPATH, ".//input[@name='name']")  # Поле 'Email' на странице авторизации
