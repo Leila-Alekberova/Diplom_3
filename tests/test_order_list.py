@@ -2,11 +2,8 @@ import allure
 import pytest
 import unittest
 from data import Urls
-from locators.profile_page_locator import ProfilePageLocator
-from locators.main_page_locator import MainPageLocators
 from pages.main_page import MainPage
 from pages.profile_page import ProfilePage
-from locators.order_list_locator import OrderListLocator
 from pages.order_list_page import OrderListPage
 from conftest import driver
 
@@ -27,6 +24,7 @@ class TestOrderList:
         profile = ProfilePage(driver)
         profile.open_login_page()
         profile.auth_user()
+        profile.wait_visibility_button_profile()
         profile.click_order_list()
         page = MainPage(driver)
         page.click_constructor()
@@ -50,10 +48,11 @@ class TestOrderList:
         profile = ProfilePage(driver)
         profile.open_login_page()
         profile.auth_user()
+        profile.wait_visibility_button_profile()
         page = OrderListPage(driver)
         page.click_order_list()
         all_orders_before = OrderListPage(driver)
-        all_orders_before.wait_visibility_element(OrderListLocator.ALL_COUNT_ORDER)
+        all_orders_before.wait_visibility_all_count_order()
         all_orders_before.get_all_day_orders()
         order = MainPage(driver)
         order.click_constructor()
@@ -72,6 +71,7 @@ class TestOrderList:
         profile = ProfilePage(driver)
         profile.open_login_page()
         profile.auth_user()
+        profile.wait_visibility_button_profile()
         page = OrderListPage(driver)
         page.click_order_list()
         today_orders_before = OrderListPage(driver)
@@ -94,6 +94,7 @@ class TestOrderList:
         profile = ProfilePage(driver)
         profile.open_login_page()
         profile.auth_user()
+        profile.wait_visibility_button_profile()
         order = MainPage(driver)
         order.click_constructor()
         order.add_bun_in_order()

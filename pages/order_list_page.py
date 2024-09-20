@@ -97,3 +97,8 @@ class OrderListPage(BasePage):
     @allure.step("Открытие главной страницы")
     def open_main_page(self):
         self.open_page(Urls.MAIN_URL)
+
+    @allure.step("Ожидание отображения количества всех заказов")
+    def wait_visibility_all_count_order(self):
+        result = self.wait_visibility_element(OrderListLocator.ALL_COUNT_ORDER)
+        return result

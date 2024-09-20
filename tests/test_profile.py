@@ -1,8 +1,6 @@
 import allure
 import pytest
 from data import Urls
-from locators.profile_page_locator import ProfilePageLocator
-from locators.main_page_locator import MainPageLocators
 from pages.main_page import MainPage
 from pages.profile_page import ProfilePage
 from conftest import driver

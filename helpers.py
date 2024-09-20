@@ -1,10 +1,8 @@
+from faker import Faker
 class CorrectUser:
     email = "lei123@mail.ru"
     name = "Лейла"
     password = "123123"
-
-from faker import Faker
-
 
 class TestUser:
     @staticmethod

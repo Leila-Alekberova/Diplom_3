@@ -21,10 +21,6 @@ class BasePage:
     def find_element(self, locator):
         return self.driver.find_element(*locator)
 
-    # Нахождение нескольких элементов
-    def find_elements(self, locator):
-        return WebDriverWait(self.driver, 20).until(EC.presence_of_all_elements_located(locator))
-
     # Ожидание, пока элемент не станет невидимым
     def wait_until_element_invisibility(self, locator):
         WebDriverWait(self.driver, 20).until(EC.invisibility_of_element_located(locator))
@@ -49,10 +45,6 @@ class BasePage:
     def wait_visibility_elements(self, locator):
         WebDriverWait(self.driver, 10).until(EC.presence_of_all_elements_located(locator))
 
-    # wait_visibility_element и wait_visibility_elements два разных метода,
-    # Метод wait_visibility_element ожидает, пока один конкретный элемент станет видимым.
-    # Метод wait_visibility_elements ожидает, пока все элементы из указанного списка станут видимыми
-
     # Ожидание, когда элемент станет кликабельным
     def wait_clickable_element(self, locator):
         WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(locator))
@@ -60,10 +52,11 @@ class BasePage:
 
     # Перетащить элемент
     def drag_and_drop_on_element(self, locator_one, locator_two):
-        draggable = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator_one))
-        droppable = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator_two))
+        draggable = self.find_element_with_wait(locator_one)
+        droppable = self.find_element_with_wait(locator_two)
         action_chains = ActionChains(self.driver)
         action_chains.drag_and_drop(draggable, droppable).perform()
+
 
     # Ввести текст в поле
     def send_keys(self, locator, value):

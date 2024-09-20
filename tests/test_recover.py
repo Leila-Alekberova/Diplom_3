@@ -1,5 +1,5 @@
 from data import Urls
-from helpers import CorrectUser, TestUser
+from helpers import CorrectUser
 import allure
 import pytest
 from pages.recover_page import RecoverPage
